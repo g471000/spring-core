@@ -12,7 +12,7 @@ The core goal of this project is understanding about Spring container and the Sp
 ## Business Model
 This is imaginary business model: 
 * User 
-    * User can join and also search
+    * User can join and search
     * There are 2 levels of users: regular/VIP
     * (Undecided) Can store user data into DB and the data can be accessed from outside system.
 * Order and Discount
