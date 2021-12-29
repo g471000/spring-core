@@ -8,12 +8,13 @@ import hello.core.member.MemberServiceImpl;
 public class MemberApp {
 
     public static void main(String[] args) {
-        MemberService memberService = new MemberServiceImpl();
+        AppConfig appConfig = new AppConfig();
+        MemberService memberService = appConfig.memberService();
         Member member1 = new Member(1L, "pikachu", Grade.VIP);
         memberService.join(member1);
 
         Member foundMember = memberService.findMember(1L);
-        System.out.println("New Member: = " + member1.getName());
-        System.out.println("Found Member: = " + memberService.findMember(member1.getId()).getName());
+        System.out.println("New Member: = " + foundMember.getName());
+        System.out.println("Found Member: = " + memberService.findMember(foundMember.getId()).getName());
     }
 }
