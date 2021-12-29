@@ -45,9 +45,14 @@ Software should be open for extension but not for the change.
 * AppConfig can change dependencies, such as `FixedDiscountPolicy` -> `RatedDiscountPolicy`, so insert the relationship into the object, so programmer/developer do not need to edit client code.
 * It is open to extend new logic, but closed for the usage (client code)
 
+## IoC Container, DI Container
+Like AppConfig, creating/managing objects and dependency injection work is done by IoC Container or DI Container. Recently, people focus more on dependency injection, so it's usually called DI Container.
 
+It is also called as assembler or object factory.
  
 
 
+
+# Reference 
 This is educated by inflearn: Spring Core Basic:
 https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8
